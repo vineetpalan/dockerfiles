@@ -1,10 +1,12 @@
 # Run Eclipse in a container
 
-# docker run -d \
-#	-v /tmp/.X11-unix:/tmp/.X11-unix \
-#	-e DISPLAY=unix$DISPLAY \
-#	--name eclipse \
-#	palan/eclipse
+# $ docker build -t eclipse .
+#
+# $ docker run -d \
+#	    -v /tmp/.X11-unix:/tmp/.X11-unix \
+#	    -e DISPLAY=unix$DISPLAY \
+#	    --name eclipse \
+#     eclipse
 #
 FROM java
 
