@@ -12,7 +12,7 @@ FROM java
 
 LABEL maintainer "Vineet Palan <vineetpalan@gmail.com>"
 
-ARG ECLIPSE_URL='http://eclipse.mirror.rafal.ca/technology/epp/downloads/release/oxygen/R/eclipse-committers-oxygen-R-linux-gtk-x86_64.tar.gz'
+ARG ECLIPSE_URL='http://tiny.cc/eclipsefordocker'
 
 RUN curl $ECLIPSE_URL | tar -xvz -C /home
 
